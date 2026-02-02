@@ -1,0 +1,81 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  --card-bg: #fbfbfb;
+  --accent: #0b5ed7;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(180deg,#f4f7fb,#ffffff);
+  color: #111;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 16px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: rgba(20,20,40,0.04) 0 6px 18px;
+  margin-bottom: 12px;
+}
+
+.current-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current-temp {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 14px;
+  color: #555;
+}
+
+.forecast-grid {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 8px;
+}
+
+.forecast-day {
+  min-width: 140px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: rgba(10,10,30,0.04) 0 4px 10px;
+  text-align: center;
+}
