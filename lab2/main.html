@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Lista Zadań</h1>
+
+        <label for="search">Wyszukiwanie</label>
+        <input
+            type="text"
+            id="search"
+            placeholder="Wyszukaj..."
+            oninput="searchTasks()"
+        >
+
+        <ul id="taskList"></ul>
+
+        <div class="add-task">
+            <label for="taskInput">Nowe zadanie</label>
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Nowe zadanie"
+                minlength="3"
+                maxlength="255"
+            >
+
+            <label for="taskDate">Data</label>
+            <input type="date" id="taskDate">
+
+            <button onclick="addTask()">Dodaj zadanie</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
